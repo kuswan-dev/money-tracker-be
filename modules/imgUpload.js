@@ -8,12 +8,12 @@ const pathKey = path.resolve('./serviceaccountkey.json')
 
 // TODO: Sesuaikan konfigurasi Storage
 const gcs = new Storage({
-    projectId: 'positive-cocoa-418023',
+    projectId: 'submission-mgce-tatang',
     keyFilename: pathKey
 })
 
 // TODO: Tambahkan nama bucket yang digunakan
-const bucketName = 'money-tracker-storage-2'
+const bucketName = 'money-tracker-storage-3'
 const bucket = gcs.bucket(bucketName)
 
 function getPublicUrl(filename) {
